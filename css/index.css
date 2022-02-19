@@ -42,7 +42,7 @@ li:not(:last-child){
 }
 
 li:hover {
-  background: #f2f2f2;
+  background: var(--gray);
 }
 
 span {
