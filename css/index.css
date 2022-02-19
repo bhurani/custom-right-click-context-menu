@@ -1,5 +1,6 @@
 :root {
   --purple: linear-gradient(135deg, #8B55E9 0%, #5D6BE6 100%);
+  --gray: #f2f2f2;
 }
 
 * {
