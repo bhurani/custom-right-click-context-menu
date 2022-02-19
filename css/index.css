@@ -10,7 +10,7 @@
 body {
   background: var(--purple);
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 ul {
