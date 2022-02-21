@@ -1,12 +1,12 @@
-"use strict";
+'use strict';
 
-const menu = document.querySelector(".menu"),
+const menu = document.querySelector('.menu'),
       menuWidth = menu.offsetWidth,
       menuHeight = menu.offsetHeight,
-      shareMenu = menu.querySelector(".share-menu"),
+      shareMenu = menu.querySelector('.share-menu'),
       shareMenuWidth = shareMenu.offsetWidth;
 
-window.addEventListener("contextmenu", e =>{
+window.addEventListener('contextmenu', e =>{
   e.preventDefault();
 
   let x = e.offsetX,
@@ -19,13 +19,13 @@ window.addEventListener("contextmenu", e =>{
 
   menu.style.left = `${x}px`;
   menu.style.top = `${y}px`;
-  menu.style.visibility = "visible";
+  menu.style.visibility = 'visible';
 
-  if(x > (winWidth - menuWidth - shareMenuWidth)) {
-    shareMenu.style.left = "-200px";
-  }else {
-    shareMenu.style.left = "";
+  if(x > (winWidth - menuWidth - shareMenuWidth)){
+    shareMenu.style.left = '-200px';
+  }else{
+    shareMenu.style.left = '';
   }
 });
 
-window.addEventListener("click", () => menu.style.visibility = "hidden");
+window.addEventListener('click', () => menu.style.visibility = 'hidden');
